@@ -1,0 +1,3 @@
+/config/lemmy.hjson
+/config/config.hjson
+/docker/docker-compose.yaml

@@ -1,11 +1,11 @@
 [workspace.package]
-version = "0.45.0"
+version = "0.0.1"
 edition = "2024"
-description = "Lemmy for PTTBBS"
+description = "pttbbs-lemmy"
 license = "AGPL-3.0"
-homepage = "https://www.devptt.dev/"
-documentation = "https://doc.devptt.dev"
-repository = "https://github.com/Ptt-official-app/pttbbs-backend"
+homepage = "https://github.com/Ptt-official-app/pttbbs-lemmy"
+documentation = "https://github.com/Ptt-official-app/pttbbs-lemmy"
+repository = "https://github.com/Ptt-official-app/pttbbs-lemmy"
 rust-version = "1.99"
 
 [workspace]

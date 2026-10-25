@@ -1,0 +1,3 @@
+[submodule "lemmy"]
+	path = lemmy
+	url = git@github.com:LemmyNet/lemmy.git

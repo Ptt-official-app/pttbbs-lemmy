@@ -1,0 +1,37 @@
+[package]
+name = "pttbbs-server"
+version.workspace = true
+edition.workspace = true
+description.workspace = true
+license.workspace = true
+homepage.workspace = true
+documentation.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+
+[[bin]]
+name = "pttbbs-lemmy"
+path = "src/main.rs"
+
+[dependencies]
+pttbbs-routes = { workspace = true }
+lemmy_api_routes = { workspace = true }
+lemmy_api_utils = { workspace = true }
+lemmy_db_schema = { workspace = true }
+lemmy_db_views_site = { workspace = true }
+lemmy_diesel_utils = { workspace = true }
+lemmy_routes = { workspace = true }
+lemmy_server = { workspace = true }
+lemmy_utils = { workspace = true }
+actix-web = { workspace = true }
+clap = { workspace = true }
+reqwest-middleware = { workspace = true }
+reqwest-tracing = { workspace = true }
+serde_json = { workspace = true }
+tokio = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+tracing-actix-web = { workspace = true }
+
+[lints]
+workspace = true

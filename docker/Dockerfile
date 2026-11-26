@@ -50,5 +50,5 @@ RUN apt update && apt install -y libssl-dev libpq-dev ca-certificates curl git
 COPY --from=builder --chmod=0755 /srv/pttbbs-lemmy/pttbbs-lemmy /usr/local/bin
 
 ENTRYPOINT ["pttbbs-lemmy"]
-EXPOSE 8536
+EXPOSE 8537
 STOPSIGNAL SIGTERM

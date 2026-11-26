@@ -1,6 +1,6 @@
 # pttbbs-lemmy
 
-This repo is a workaround for [pttbbs-backend](https://github.com/Ptt-official-app/pttbbs-backend) to acces [Lemmy](https://github.com/LemmyNet/lemmy) authentication.
+This repo is a workaround for [pttbbs-backend](https://github.com/Ptt-official-app/pttbbs-backend) to access [Lemmy](https://github.com/LemmyNet/lemmy) authentication.
 
 Currently, it allows:
 1. lets callers with an admin token generate tokens for any user.
@@ -24,7 +24,8 @@ You should be able to:
 ```sh
 curl -X POST -H 'Content-Type: application/json' -d '{"username_or_email": "SYSOP", "password": "1234567890", "stay_logged_in": true}' 'http://localhost:8536/api/v4/account/auth/login'
 
-jwt=${jwt} curl -X POST -H 'Content-Type: application/json' -H "Authorization: Bearer ${jwt}" -d '{"username": "SYSOP"}' 'http://localhost:8537/api/v4/pttbbs-lemmy/token'
+# Replace ${jwt} with the "jwt" field in the login response above.
+curl -X POST -H 'Content-Type: application/json' -H "Authorization: Bearer ${jwt}" -d '{"username": "SYSOP"}' 'http://localhost:8537/api/v4/pttbbs-lemmy/token'
 ```
 
 If you want to clean up the docker containers:
